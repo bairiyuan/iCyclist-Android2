@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <!-- 用户信息区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <!-- 用户名 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名："
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未登录"
+                android:textSize="16sp"
+                android:textColor="#666666"/>
+        </LinearLayout>
+
+        <!-- 手机号 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号："
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未绑定"
+                android:textSize="16sp"
+                android:textColor="#666666"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 功能按钮 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="退出登录"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#F44336"/>
+    </LinearLayout>
+</LinearLayout>
